@@ -71,11 +71,11 @@ class SpecificWorker(GenericWorker):
         if pygame_flag:
             pygame.init()
             pygame.display.set_mode((1,1), pygame.NOFRAME)
-            screen.addstr(0,0,'Connected to robot. Use arrows (or) ASWD to control direction, Shift to speed up, space bar to stop ans ''q'' to exit')
+            screen.addstr(0,0,'Connected to robot. \nUse arrows (or) ASWD to control direction, Shift to speed up, space bar to stop and ''q'' to exit')
             self.adv_command = 'STOP'
             self.rot_command = 'STOP'
         else:
-            screen.addstr(0,0,'Connected to robot. Use arrows to control speed, space bar to stop ans ''q'' to exit')
+            screen.addstr(0,0,'Connected to robot. \nUse arrows to control speed, space bar to stop ans ''q'' to exit')
         screen.refresh()
 
         #tt1=input("max :")
